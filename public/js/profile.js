@@ -14,7 +14,7 @@ const newPostHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/post');
+        document.location.replace('/profile');
       } else {
         alert('Failed to create post');
       }
@@ -22,15 +22,15 @@ const newPostHandler = async (event) => {
   };
   
   const delPostHandler = async (event) => {
-    if (event.target.hasAttribute('post-id')) {
-      const id = event.target.getAttribute('post-id');
+    if (event.target.hasAttribute('data-id')) {
+      const id = event.target.getAttribute('data-id');
   
-      const response = await fetch(`/api/posts/${id}`, {
+      const response = await fetch(`/api/post/${id}`, {
         method: 'DELETE',
       });
   
       if (response.ok) {
-        document.location.replace('/post');
+        document.location.replace('/profile');
       } else {
         alert('Failed to delete post');
       }
