@@ -1,24 +1,69 @@
-header, .post:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-}
-
-.no-button {
-  background: none;
-  border: none;
+* {
+  margin: 0;
   padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none; 
+  color: #d3efde;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+header {
+  background-color: black;
+  padding: 5px;
+  margin: 0;
+  height: 100px;
+}
+
+nav {
+  margin: 5px;
+}
+
+#heading {
+  background-color: #99D5BF;
+  color: black;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.post {
+  padding: 5px;
+}
+
+hr {
+  margin: 10px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  border-color: #99D5BF;
+  height: 2px;
+}
+
+#logout {
+  background: none;
+  color:#d3efde;
+  border: none;
+}
+
+h2 {
+  color: #99D5BF;
+}
+
+#comment-desc {
+  width: 75%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+input, label {
+  display: block;
+}
+
+#comment-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12.5%;
 }
